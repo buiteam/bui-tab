@@ -3,7 +3,8 @@
  * @author dxq613@gmail.com
  * @ignore
  */
-var BUI = requrie('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
   Component =  BUI.Component,
   CLS_ITEM_TITLE = 'tab-item-title',
   CLS_ITEM_CLOSE = 'tab-item-close',

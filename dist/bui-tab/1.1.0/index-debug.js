@@ -1,4 +1,4 @@
-define("bui-tab/1.1.0/index-debug", ["bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tab-debug", "bui-tab/1.1.0/src/tabitem-debug", "bui-tab/1.1.0/src/navtabitem-debug", "bui-tab/1.1.0/src/navtab-debug", "bui-tab/1.1.0/src/tabpanel-debug", "bui-tab/1.1.0/src/tabpanelitem-debug", "bui-menu/1.1.0/index-debug", "bui-tab/1.1.0/src/panels-debug", "bui-tab/1.1.0/src/panelitem-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tab-debug", "bui-tab/1.1.0/src/tabitem-debug", "bui-tab/1.1.0/src/navtabitem-debug", "bui-tab/1.1.0/src/navtab-debug", "bui-tab/1.1.0/src/tabpanel-debug", "bui-tab/1.1.0/src/tabpanelitem-debug", "bui-menu/1.1.0/index-debug", "bui-tab/1.1.0/src/panels-debug", "bui-tab/1.1.0/src/panelitem-debug"], function(require, exports, module) {
   /**
    * @fileOverview 切换标签入口
    * @ignore
@@ -15,7 +15,7 @@ define("bui-tab/1.1.0/index-debug", ["bui-common/1.1.0/common-debug", "bui-tab/1
   });
   module.exports = Tab;
 });
-define("bui-tab/1.1.0/src/tab-debug", ["bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/src/tab-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 切换标签
    * @ignore
@@ -72,7 +72,7 @@ define("bui-tab/1.1.0/src/tab-debug", ["bui-common/1.1.0/common-debug"], functio
   });
   module.exports = tab;
 });
-define("bui-tab/1.1.0/src/tabitem-debug", ["bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/src/tabitem-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview
    * @ignore
@@ -116,13 +116,14 @@ define("bui-tab/1.1.0/src/tabitem-debug", ["bui-common/1.1.0/common-debug"], fun
   item.View = itemView;
   module.exports = item;
 });
-define("bui-tab/1.1.0/src/navtabitem-debug", [], function(require, exports, module) {
+define("bui-tab/1.1.0/src/navtabitem-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 导航项
    * @author dxq613@gmail.com
    * @ignore
    */
-  var BUI = requrie('bui-common'),
+  var $ = require("jquery/1.9.1/jquery-debug"),
+    BUI = require("bui-common/1.1.0/common-debug"),
     Component = BUI.Component,
     CLS_ITEM_TITLE = 'tab-item-title',
     CLS_ITEM_CLOSE = 'tab-item-close',
@@ -444,7 +445,7 @@ define("bui-tab/1.1.0/src/navtabitem-debug", [], function(require, exports, modu
   navTabItem.View = navTabItemView;
   module.exports = navTabItem;
 });
-define("bui-tab/1.1.0/src/navtab-debug", ["bui-common/1.1.0/common-debug", "bui-menu/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/src/navtab-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-menu/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 导航标签
    * @author dxq613@gmail.com
@@ -1003,7 +1004,7 @@ define("bui-tab/1.1.0/src/navtab-debug", ["bui-common/1.1.0/common-debug", "bui-
   });
   module.exports = navTab;
 });
-define("bui-tab/1.1.0/src/tabpanel-debug", ["bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tab-debug", "bui-tab/1.1.0/src/panels-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/src/tabpanel-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tab-debug", "bui-tab/1.1.0/src/panels-debug"], function(require, exports, module) {
   /**
    * @fileOverview 每个标签对应一个面板
    * @ignore
@@ -1095,7 +1096,7 @@ define("bui-tab/1.1.0/src/tabpanel-debug", ["bui-common/1.1.0/common-debug", "bu
   });
   module.exports = tabPanel;
 });
-define("bui-tab/1.1.0/src/tabpanelitem-debug", ["bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tabitem-debug", "bui-tab/1.1.0/src/panelitem-debug"], function(require, exports, module) {
+define("bui-tab/1.1.0/src/tabpanelitem-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-tab/1.1.0/src/tabitem-debug", "bui-tab/1.1.0/src/panelitem-debug"], function(require, exports, module) {
   /**
    * @fileOverview
    * @ignore
@@ -1177,11 +1178,12 @@ define("bui-tab/1.1.0/src/tabpanelitem-debug", ["bui-common/1.1.0/common-debug",
   item.View = itemView;
   module.exports = item;
 });
-define("bui-tab/1.1.0/src/panels-debug", [], function(require, exports, module) {
+define("bui-tab/1.1.0/src/panels-debug", ["jquery/1.9.1/jquery-debug"], function(require, exports, module) {
   /**
    * @fileOverview 拥有多个面板的容器
    * @ignore
    */
+  var $ = require("jquery/1.9.1/jquery-debug");
   /**
    * @class BUI.Tab.Panels
    * 包含面板的标签的扩展类
@@ -1268,11 +1270,12 @@ define("bui-tab/1.1.0/src/panels-debug", [], function(require, exports, module) 
   });
   module.exports = Panels;
 });
-define("bui-tab/1.1.0/src/panelitem-debug", [], function(require, exports, module) {
+define("bui-tab/1.1.0/src/panelitem-debug", ["jquery/1.9.1/jquery-debug"], function(require, exports, module) {
   /**
    * @fileOverview 拥有内容的标签项的扩展类，每个标签项都有一个分离的容器作为面板
    * @ignore
    */
+  var $ = require("jquery/1.9.1/jquery-debug");
   /**
    * @class BUI.Tab.PanelItem
    * 包含面板的标签项的扩展

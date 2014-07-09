@@ -2,7 +2,7 @@
  * @fileOverview 拥有内容的标签项的扩展类，每个标签项都有一个分离的容器作为面板
  * @ignore
  */
-
+var $ = require('jquery');
 /**
  * @class BUI.Tab.PanelItem
  * 包含面板的标签项的扩展

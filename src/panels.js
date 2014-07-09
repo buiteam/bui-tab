@@ -3,6 +3,8 @@
  * @ignore
  */
 
+var $ = require('jquery');
+
 /**
  * @class BUI.Tab.Panels
  * 包含面板的标签的扩展类
