@@ -1,5 +1,5 @@
 {
-  "name": "bui-tab",
+  "name": "bui-menu",
   "version": "1.1.1",
   "description": "",
   "keywords": [],
@@ -7,7 +7,7 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/buiteam/bui-tab.git"
+    "url": "git://github.com/buiteam/bui-menu.git"
   },
   "bugs": {
     "url": ""
@@ -17,8 +17,7 @@
     "main": "index.js",
     "dependencies": {
       "jquery": "1.9.1",
-      "bui-common": "~1.1.0",
-      "bui-menu": "~1.1.0"
+      "bui-common": "~1.1.0"
     },
     "devDependencies": {
       "expect.js": "0.3.1",
@@ -27,7 +26,6 @@
     "engines": {
       "seajs": "2.2.1"
     },
-    "buildArgs": "--ignore jquery",
     "tests": "tests/*.js"
   }
 }
